@@ -1,5 +1,11 @@
 # nist-data-mirror-for-dependency-check
 
+## A better solution than this script
+```
+mvn org.owasp:dependency-check-maven:RELEASE:update-only -DnvdDatafeedUrl="https://dependency-check.github.io/DependencyCheck_Builder/nvd_cache/nvdcve-{0}.json.gz"
+```
+
+## This script
 If the nist api data feeds are struggling or have a huge data import, the script can be
 run that will import files from a repo on github.
 
